@@ -1,6 +1,6 @@
 (function() {
 
-  var $ = window.jQuery;
+    var $ = (window.jQuery == undefined) ? django.jQuery : window.jQuery;
 
   $.fn.autocompleteselect = function(options) {
     return this.each(function() {
